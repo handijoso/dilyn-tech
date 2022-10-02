@@ -27,11 +27,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav navigation-words">
-                        <a class="nav-link" href="#">About Us</a>
-                        <a class="nav-link" href="#">Portfolio</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        <a class="nav-link" href="#">Customer's Review</a>
-                        <a href="#"><img src="./Dilyn (Web Layout)/Main Page/jpg & png/1. Home/Contact-Us-Button.png"
+                        <a class="nav-link" href="#about-container">About Us</a>
+                        <a class="nav-link" href="#portfolio-container">Portfolio</a>
+                        <a class="nav-link" href="#pricing-container">Pricing</a>
+                        <a class="nav-link" href="#customer-container">Customer's Review</a>
+                        <a href="#contact-top-container"><img
+                                src="./Dilyn (Web Layout)/Main Page/jpg & png/1. Home/Contact-Us-Button.png"
                                 alt="contact button"></a>
                     </div>
                 </div>
@@ -42,14 +43,6 @@
     <div id="carousel-container" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div id="carousel-content">
             <p>BUILD & DESIGN YOUR<br>WEBSITE WITH US.</p>
-        </div>
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -62,14 +55,6 @@
                 <img src="./gallery/Home - Slide 3.svg" class="d-block w-100" alt="image3">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 
     <div id="about-container">
@@ -91,19 +76,23 @@
         </div>
     </div>
 
-    <div class="portfolio-container">
+    <div id="portfolio-container">
         PORTFOLIO
     </div>
 
-    <div class="pricing-container">
+    <div id="pricing-container">
         <span class="sub-heading-blue">PRICING</span>
         <div class="price-card-container">
             <div class="price-card">
                 BASIC
                 <div class="benefit-text">
-                    <p>A</p>
-                    <p>B</p>
-                    <p>C</p>
+                    <p>Free Domain</p>
+                    <p>1 Page</p>
+                    <p>Free SSL (https)</p>
+                    <p>1 Logo Design</p>
+                    <p>1 Web Layout Design</p>
+                    <p>Responsive Web</p>
+                    <p>Animation</p>
                 </div>
                 <span>IDR 8.000.000</span>
                 <div class="price-amount">
@@ -113,9 +102,13 @@
             <div class="price-card">
                 STANDARD
                 <div class="benefit-text">
-                    <p>A</p>
-                    <p>B</p>
-                    <p>C</p>
+                    <p>Free Domain</p>
+                    <p>Up To 5 Pages</p>
+                    <p>Free SSL (https)</p>
+                    <p>3 Logo Design Choices</p>
+                    <p>3 Web Layout Design Choices</p>
+                    <p>Responsive Web</p>
+                    <p>Animation</p>
                 </div>
                 <span>IDR 10.000.000</span>
                 <div class="price-amount">
@@ -125,9 +118,13 @@
             <div class="price-card">
                 E-COMMERCE
                 <div class="benefit-text">
-                    <p>A</p>
-                    <p>B</p>
-                    <p>C</p>
+                    <p>Free Domain</p>
+                    <p>Up To 10 Pages</p>
+                    <p>Free SSL (https)</p>
+                    <p>3 Logo Design Choices</p>
+                    <p>3 Web Layout Design Choices</p>
+                    <p>Responsive Web</p>
+                    <p>Animation</p>
                 </div>
                 <span>IDR 20.000.000</span>
                 <div class="price-amount">
@@ -137,10 +134,10 @@
         </div>
     </div>
 
-    <div class="customer-container">
+    <div id="customer-container">
         <img class="quotation-img"
             src="./Dilyn (Web Layout)/Main Page/jpg & png/5. Customer's Review/Quotation-Mark.png" alt="quotation img">
-        <div class="sub-heading-white">CUSTOMER'S REVIEW</div>
+        <div class="sub-heading-white" style="margin-bottom: 30px;">CUSTOMER'S REVIEW</div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -152,17 +149,20 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item  carousel-customer active">
-                    <div class="card bg-transparent customer-card border-0" style="width: 18rem;">
+                    <div class="card bg-transparent customer-card border-0">
                         <img src="./gallery/irenesetiawan.jpg" alt="" class="customer-image">
                         <div class="card-body review-text">
                             <h5 class="card-title">dr.Irene Setiawan</h5>
-                            <p>Co-Founder of Heparen</p>
-                            <p class="card-text">ABCDEFGH</p>
+                            <p>Founder of Heparen</p>
+                            <p class="card-text">"Good web design, even when I don't have any idea about the design,
+                                Dilyn Tech provided me with some examples to choose from. The website can be revised
+                                until it meets with my expectations. Thank you Dilyn Tech! I will surely use their
+                                service again"</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item carousel-customer">
-                    <div class="card bg-transparent customer-card border-0" style="width: 18rem;">
+                    <div class="card bg-transparent customer-card border-0">
                         <img src="./gallery/irenesetiawan.jpg" alt="" class="customer-image">
                         <div class="card-body review-text">
                             <h5 class="card-title">Card title</h5>
@@ -172,7 +172,7 @@
                     </div>
                 </div>
                 <div class="carousel-item carousel-customer">
-                    <div class="card bg-transparent customer-card border-0" style="width: 18rem;">
+                    <div class="card bg-transparent customer-card border-0">
                         <img src="./gallery/irenesetiawan.jpg" alt="" class="customer-image">
                         <div class="card-body review-text">
                             <h5 class="card-title">Card title</h5>
@@ -195,7 +195,7 @@
         </div>
     </div>
 
-    <div class="contact-top-container">
+    <div id="contact-top-container">
         <div class="contact-left-column">
             <span class="sub-heading-blue">CONTACT US</span>
             <form class="form-container">
@@ -209,16 +209,18 @@
         <div class="contact-right-column">
             <div class="contact-social-media">
                 <img src="./Dilyn (Web Layout)/Main Page/jpg & png/6. Contact Us/IG-Button.png" alt="instagram logo">
-                <img src="./Dilyn (Web Layout)/Main Page/jpg & png/6. Contact Us/WA-Button.png" alt="WA Logo">
+                <a target="_blank"
+                    href="https://wa.me/628118201995?text=I'm%20interested%20in%20your%20website%20service"><img
+                        src="./Dilyn (Web Layout)/Main Page/jpg & png/6. Contact Us/WA-Button.png" alt="WA Logo"></a>
                 <img src="./Dilyn (Web Layout)/Main Page/jpg & png/6. Contact Us/E-mail-Button.png" alt="email logo">
             </div>
             <div>
                 <h4>INSTAGRAM</h4>
                 <h6>@lorem</h6>
                 <h4>WHATSAPP</h4>
-                <h6>+6281652563</h6>
+                <h6>+628118201995</h6>
                 <h4>EMAIL</h4>
-                <h6>@lorem.com</h6>
+                <h6>dilyn.tech.indonesia@gmail.com</h6>
             </div>
             <div class="computer-image-container">
                 <img src="./Dilyn (Web Layout)/Main Page/jpg & png/6. Contact Us/Computer-Vector.png"
@@ -242,16 +244,16 @@
                 </div>
                 <div class="quick-links-inside-container">
                     <div class="quick-links">
-                        <a>Home</a>
-                        <a>Pricing</a>
+                        <a href="#">Home</a>
+                        <a href="#pricing-container">Pricing</a>
                     </div>
                     <div class="quick-links">
-                        <a>About Us</a>
-                        <a>Customer's Review</a>
+                        <a href="#about-container">About Us</a>
+                        <a href="#customer-container">Customer's Review</a>
                     </div>
                     <div class="quick-links">
-                        <a>Portfolio</a>
-                        <a>Contact Us</a>
+                        <a href="#portfolio-container">Portfolio</a>
+                        <a href="#contact-top-container">Contact Us</a>
                     </div>
                 </div>
             </div>

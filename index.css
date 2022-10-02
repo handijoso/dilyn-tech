@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     background: none;
-    padding: 2% 4%;
+    padding: 10px 4%;
 }
 
 .navigation-words a {
@@ -47,12 +47,12 @@
 }
 
 #about-container {
-    margin-top: 80px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 4%;
+    padding-top: 100px;
 }
 
 .about-img {
@@ -60,14 +60,18 @@
     margin-top: 100px;
 }
 
-.portfolio-container {
-    background-image: url("./Dilyn (Web Layout)/Main Page/jpg & png/3. Portfolio/Background.jpg")
+#portfolio-container {
+    background-image: url("./Dilyn (Web Layout)/Main Page/jpg & png/3. Portfolio/Background.jpg");
+    padding-top: 100px;
 }
 
-.pricing-container {
+#pricing-container {
     background-image: url("./gallery/Pricing Background.svg");
-    margin-bottom: 50px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     width: 100%;
+    padding-top: 100px;
+    margin-bottom: 50px;
 }
 
 .price-card-container {
@@ -104,11 +108,12 @@
     text-align: center;
 }
 
-.customer-container {
+#customer-container {
     background-image: url("./Dilyn (Web Layout)/Main Page/jpg & png/5. Customer's Review/Background.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
+    padding-top: 100px;
 }
 
 .quotation-img {
@@ -127,10 +132,11 @@
     margin: auto;
     padding: 0;
     border: none;
+    width: 80%;
 }
 
 .customer-image {
-    width: 50%;
+    width: 15%;
     border-radius: 50%;
     margin: 0 auto;
 }
@@ -139,13 +145,12 @@
     margin-bottom: 30px;
 }
 
-.contact-top-container {
+#contact-top-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 80px;
     width: 100%;
     padding: 0 4%;
-
+    padding-top: 100px;
 }
 
 .contact-left-column {
@@ -224,6 +229,8 @@
 
 .quick-links a {
     margin: 5px 0;
+    text-decoration: none;
+    color: white;
 }
 
 .copyright {
@@ -251,7 +258,11 @@
         width: 80%;
     }
 
-    .contact-top-container {
+    .customer-image {
+        width: 150px;
+    }
+
+    #contact-top-container {
         flex-direction: column;
         margin-top: 80px;
         width: 100%;
