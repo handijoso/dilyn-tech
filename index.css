@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sub-heading-blue {
+    color: rgb(3, 82, 148);
+    font-size: 22px;
+}
+
+.sub-heading-white {
+    color: white;
+    font-size: 22px;
+    text-align: end;
+}
+
+#navbar-top-container {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+#navigation-container {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    padding: 2% 4%;
+}
+
+.navigation-words a {
+    color: white;
+    margin: auto 0;
+}
+
+#carousel-container {
+    z-index: -5;
+}
+
+#carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    color: white;
+    text-align: center;
+}
+
+#about-container {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+
+.about-img {
+    height: 250px;
+    margin-top: 100px;
+}
+
+.portfolio-container {
+    background-image: url("./Dilyn (Web Layout)/Main Page/jpg & png/3. Portfolio/Background.jpg")
+}
+
+.pricing-container {
+    background-image: url("./gallery/Pricing Background.svg");
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.price-card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.price-card {
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.benefit-text {
+    margin-bottom: 30px;
+}
+
+.price-card p {
+    margin: 0;
+}
+
+.price-card span {
+    text-decoration: line-through;
+}
+
+.price-amount {
+    padding: 5px 20px;
+    color: white;
+    border-radius: 25px;
+    background-color: rgb(3, 82, 148);
+    text-align: center;
+}
+
+.customer-container {
+    background-image: url("./Dilyn (Web Layout)/Main Page/jpg & png/5. Customer's Review/Background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.quotation-img {
+    width: 25%;
+    max-width: 150px;
+    position: absolute;
+    top: -30px;
+}
+
+.carousel-customer {
+    text-align: center;
+    color: white;
+}
+
+.customer-card {
+    margin: auto;
+    padding: 0;
+    border: none;
+}
+
+.customer-image {
+    width: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.review-text {
+    margin-bottom: 30px;
+}
+
+.contact-top-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    width: 100%;
+    padding: 0 4%;
+
+}
+
+.contact-left-column {
+    width: 50%;
+}
+
+.contact-right-column {
+    width: 40%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.form-container input,
+.form-container textarea {
+    margin-top: 15px;
+}
+
+.form-container button {
+    margin-top: 15px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(3, 82, 148);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.contact-social-media img {
+    width: 50px;
+}
+
+.computer-image-container {
+    margin-top: 80px;
+}
+
+.computer-image-container img {
+    width: 90%;
+}
+
+.footer-container {
+    background-image: url("./Dilyn (Web Layout)/Main Page/jpg & png/7. Quick Links/Background.jpg");
+    padding: 80px 4%;
+    padding-bottom: 30px;
+}
+
+.footer-inside-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-media {
+    text-align: end;
+}
+
+.quick-links-container {
+    width: 50%;
+    color: white;
+}
+
+.quick-links-inside-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.quick-links a {
+    margin: 5px 0;
+}
+
+.copyright {
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    #navbar-top-container img {
+        width: 150px;
+    }
+
+    #about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .price-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-card {
+        width: 80%;
+    }
+
+    .contact-top-container {
+        flex-direction: column;
+        margin-top: 80px;
+        width: 100%;
+        padding: 0 4%;
+    }
+
+    .contact-left-column {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .contact-right-column {
+        width: 100%;
+    }
+
+    .computer-image-container {
+        margin-top: 0;
+        text-align: end;
+    }
+
+    .computer-image-container img {
+        width: 50%;
+    }
+
+    .footer-inside-container {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .quick-links-inside-container {
+        flex-direction: column;
+    }
+
+    .copyright {
+        margin-top: 50px;
+    }
+
+}
