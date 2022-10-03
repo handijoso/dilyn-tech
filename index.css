@@ -11,11 +11,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: AvenirMed;
 }
 
 .sub-heading-blue {
     color: rgb(3, 82, 148);
-    font-size: 22px;
     font-family: AvenirBlack;
     font-size: 45pt;
     line-height: 1;
@@ -24,7 +24,6 @@
 
 .sub-heading-white {
     color: white;
-    font-size: 22px;
     text-align: end;
     font-family: AvenirBlack;
     font-size: 45pt;
@@ -62,11 +61,22 @@
     background-color: rgb(3, 82, 148);
 }
 
+.toggle-background {
+    animation: nav-back 2s;
+    background-color: rgb(3, 82, 148);
+}
+
+#toggler {
+    border: 2px solid white;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .navigation-words a {
     color: white;
     margin: auto 0;
-    font-family: AvenirMed;
-
 }
 
 #carousel-container {
@@ -88,12 +98,16 @@
     letter-spacing: 5px;
 }
 
-#about-container {
+.about-top-container {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     padding: 0 4%;
     padding-top: 100px;
+}
+
+#about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .about-img {
@@ -102,7 +116,6 @@
 }
 
 .about-content {
-    font-family: AvenirMed;
     letter-spacing: 2px;
     line-height: 1.5;
 }
@@ -129,6 +142,7 @@
 }
 
 .price-card-container {
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -140,10 +154,26 @@
     padding: 40px;
     margin-bottom: 30px;
     text-align: center;
+    width: 25%;
+}
+
+.price-card h4 {
+    color: rgb(3, 82, 148);
+    font-family: AvenirBlack;
 }
 
 .benefit-text {
     margin-bottom: 30px;
+}
+
+.benefit-text .tick-mark {
+    color: green;
+    text-decoration: none;
+}
+
+.benefit-text .cross-mark {
+    color: red;
+    text-decoration: none;
 }
 
 .price-card p {
@@ -200,6 +230,10 @@
     margin-bottom: 30px;
 }
 
+.review-text p {
+    font-size: 15pt;
+}
+
 #contact-top-container {
     display: flex;
     justify-content: space-between;
@@ -214,6 +248,11 @@
 
 .contact-right-column {
     width: 40%;
+}
+
+.contact-info h5:nth-child(odd) {
+    font-family: AvenirBlack;
+    color: rgb(3, 82, 148);
 }
 
 .form-container {
@@ -267,6 +306,10 @@
 .quick-links-container {
     width: 50%;
     color: white;
+}
+
+.quick-links-container h6 {
+    font-family: AvenirBlack;
 }
 
 .quick-links-inside-container {
@@ -355,6 +398,10 @@
         width: 150px;
     }
 
+    .review-text p {
+        font-size: 12pt;
+    }
+
     #contact-top-container {
         flex-direction: column;
         margin-top: 80px;
@@ -389,12 +436,17 @@
         margin-bottom: 50px;
     }
 
+    .footer-social-media img {
+        width: 30%;
+    }
+
     .quick-links-inside-container {
         flex-direction: column;
     }
 
     .copyright {
         margin-top: 50px;
+        font-size: 11pt;
     }
 
 }

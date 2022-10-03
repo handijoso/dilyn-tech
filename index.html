@@ -20,7 +20,7 @@
                 </a>
             </div>
             <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button id="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -57,25 +57,30 @@
         </div>
     </div>
 
-    <div id="about-container" class="component">
-        <div class="about-heading">
-            <span class="sub-heading-blue">ABOUT<br>US</span>
-            <img class="about-img" src="./Dilyn (Web Layout)/Main Page/jpg & png/2. About Us/Boy-&-Girl-Vector.png"
-                alt="about us img">
-        </div>
-        <div class="about-content">
-            <p>We work together to design, create and produce work that we are proud of.
-            </p>
-            <p>
-                We are a company based in Indonesia, specialized in freelance web development, web design and logo
-                design. Customer's satisfaction and being proud of the final product are our main goals. We always make
-                sure the quality of our work to meet with customer's expectation.
-            </p>
-            <p>
-                We have a talented team that will dedicate themselves to the success of your project. Web development
-                doesn't have to be complicated. With Dilyn Tech as your partner, you can expect the process of building
-                digital products to never be a riddle.
-            </p>
+    <div class="about-top-container component">
+        <span class="sub-heading-blue">ABOUT<br>US</span><br>
+        <div id="about-container">
+            <div class="about-heading">
+                <img class="about-img" src="./Dilyn (Web Layout)/Main Page/jpg & png/2. About Us/Boy-&-Girl-Vector.png"
+                    alt="about us img">
+            </div>
+            <div class="about-content">
+                <p>We work together to design, create and produce work that we are proud of.
+                </p>
+                <p>
+                    We are a company based in Indonesia, specialized in freelance web development, web design and logo
+                    design. Customer's satisfaction and being proud of the final product are our main goals. We always
+                    make
+                    sure the quality of our work to meet with customer's expectation.
+                </p>
+                <p>
+                    We have a talented team that will dedicate themselves to the success of your project. Web
+                    development
+                    doesn't have to be complicated. With Dilyn Tech as your partner, you can expect the process of
+                    building
+                    digital products to never be a riddle.
+                </p>
+            </div>
         </div>
     </div>
 
@@ -87,15 +92,15 @@
         <span class="sub-heading-blue">PRICING</span>
         <div class="price-card-container">
             <div class="price-card">
-                BASIC
+                <h4>BASIC</h4>
                 <div class="benefit-text">
-                    <p>Free Domain</p>
-                    <p>1 Page</p>
-                    <p>Free SSL (https)</p>
-                    <p>1 Logo Design</p>
-                    <p>1 Web Layout Design</p>
-                    <p>Responsive Web</p>
-                    <p>Animation</p>
+                    <p><span class="tick-mark">&#10003;</span>Free Domain</p>
+                    <p><span class="tick-mark">&#10003;</span>1 Page</p>
+                    <p><span class="tick-mark">&#10003;</span>Free SSL (https)</p>
+                    <p><span class="tick-mark">&#10003;</span>1 Logo Design</p>
+                    <p><span class="tick-mark">&#10003;</span>1 Web Layout Design</p>
+                    <p><span class="cross-mark">&#10060;</span>Responsive Web</p>
+                    <p><span class="cross-mark">&#10060;</span>Animation</p>
                 </div>
                 <span>IDR 8.000.000</span>
                 <div class="price-amount">
@@ -103,15 +108,15 @@
                 </div>
             </div>
             <div class="price-card">
-                STANDARD
+                <h4>STANDARD</h4>
                 <div class="benefit-text">
-                    <p>Free Domain</p>
-                    <p>Up To 5 Pages</p>
-                    <p>Free SSL (https)</p>
-                    <p>3 Logo Design Choices</p>
-                    <p>3 Web Layout Design Choices</p>
-                    <p>Responsive Web</p>
-                    <p>Animation</p>
+                    <p><span class="tick-mark">&#10003;</span>Free Domain</p>
+                    <p><span class="tick-mark">&#10003;</span>Up To 5 Pages</p>
+                    <p><span class="tick-mark">&#10003;</span>Free SSL (https)</p>
+                    <p><span class="tick-mark">&#10003;</span>3 Logo Design Choices</p>
+                    <p><span class="tick-mark">&#10003;</span>3 Web Layout Design Choices</p>
+                    <p><span class="tick-mark">&#10003;</span>Responsive Web</p>
+                    <p><span class="tick-mark">&#10003;</span>Animation</p>
                 </div>
                 <span>IDR 10.000.000</span>
                 <div class="price-amount">
@@ -119,15 +124,15 @@
                 </div>
             </div>
             <div class="price-card">
-                E-COMMERCE
+                <h4>E-COMMERCE</h4>
                 <div class="benefit-text">
-                    <p>Free Domain</p>
-                    <p>Up To 10 Pages</p>
-                    <p>Free SSL (https)</p>
-                    <p>3 Logo Design Choices</p>
-                    <p>3 Web Layout Design Choices</p>
-                    <p>Responsive Web</p>
-                    <p>Animation</p>
+                    <p><span class="tick-mark">&#10003;</span>Free Domain</p>
+                    <p><span class="tick-mark">&#10003;</span>Up To 10 Pages</p>
+                    <p><span class="tick-mark">&#10003;</span>Free SSL (https)</p>
+                    <p><span class="tick-mark">&#10003;</span>3 Logo Design Choices</p>
+                    <p><span class="tick-mark">&#10003;</span>3 Web Layout Design Choices</p>
+                    <p><span class="tick-mark">&#10003;</span>Responsive Web</p>
+                    <p><span class="tick-mark">&#10003;</span>Animation</p>
                 </div>
                 <span>IDR 20.000.000</span>
                 <div class="price-amount">
@@ -155,7 +160,7 @@
                     <div class="card bg-transparent customer-card border-0">
                         <img src="./gallery/irenesetiawan.jpg" alt="" class="customer-image">
                         <div class="card-body review-text">
-                            <h5 class="card-title">dr.Irene Setiawan</h5>
+                            <h3 class="card-title">dr.Irene Setiawan</h3>
                             <p>Founder of Heparen</p>
                             <p class="card-text">"Good web design, even when I don't have any idea about the design,
                                 Dilyn Tech provided me with some examples to choose from. The website can be revised
@@ -219,12 +224,12 @@
                         src="./Dilyn (Web Layout)/Main Page/jpg & png/6. Contact Us/WA-Button.png" alt="WA Logo"></a>
                 <img src="./Dilyn (Web Layout)/Main Page/jpg & png/6. Contact Us/E-mail-Button.png" alt="email logo">
             </div>
-            <div>
-                <h4>INSTAGRAM</h4>
+            <div class="contact-info">
+                <h5>INSTAGRAM</h5>
                 <h6>@lorem</h6>
-                <h4>WHATSAPP</h4>
+                <h5>WHATSAPP</h5>
                 <h6>+628118201995</h6>
-                <h4>EMAIL</h4>
+                <h5>EMAIL</h5>
                 <h6>dilyn.tech.indonesia@gmail.com</h6>
             </div>
             <div class="computer-image-container">
@@ -241,7 +246,7 @@
                     alt="Dilyn logo">
             </div>
             <div class="quick-links-container">
-                Quick Links
+                <h6>Quick Links</h6>
                 <div class="footer-social-media">
                     <img src="./Dilyn (Web Layout)/Main Page/jpg & png/7. Quick Links/IG-Icon.png" alt="IG Icon">
                     <a href="https://wa.me/628118201995?text=I'm%20interested%20in%20your%20website%20service"><img

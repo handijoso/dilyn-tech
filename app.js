@@ -25,7 +25,9 @@ function callbackFunc() {
 
 window.addEventListener("scroll", callbackFunc)
 
+const navbarToggler = document.querySelector(".navbar-toggler")
 const navbar = document.querySelector(".navigation-container");
+const navbarCollapse = document.querySelector(".navbar-collapse")
 const navBackground = () => {
     if (window.scrollY > 200) {
         navbar.classList.add("nav-background");
@@ -34,5 +36,11 @@ const navBackground = () => {
         navbar.classList.remove("nav-background");
     }
 }
+
+navbarToggler.addEventListener("click", () => {
+    navbar.classList.toggle("toggle-background");
+})
+
+
 
 window.addEventListener("scroll", navBackground);
