@@ -13,7 +13,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg p-0" id="navbar-top-container">
-        <div class="container-fluid" id="navigation-container">
+        <div class="container-fluid navigation-container">
             <div>
                 <a class="navbar-brand" href="#">
                     <img src="./Dilyn (Web Layout)/Main Page/jpg & png/1. Home/Dilyn Logo (white).png" alt="Dilyn logo">
@@ -57,30 +57,33 @@
         </div>
     </div>
 
-    <div id="about-container">
+    <div id="about-container" class="component">
         <div>
             <span class="sub-heading-blue">ABOUT US</span>
             <img class="about-img" src="./Dilyn (Web Layout)/Main Page/jpg & png/2. About Us/Boy-&-Girl-Vector.png"
                 alt="about us img">
         </div>
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestiae officia, molestias optio totam
-                laudantium ullam labore quasi tenetur! Excepturi quaerat cumque nisi totam quam enim rem praesentium
-                voluptatum id.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quo tenetur aliquam? Aut omnis quis
-                optio doloribus maxime vero suscipit quas voluptatibus quia necessitatibus nihil nam soluta voluptas,
-                perferendis alias.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tempora nemo obcaecati nostrum, esse modi
-                neque optio quis quo ut debitis non voluptatibus quae provident ratione voluptates libero dolorum! Quod.
+            <p>We work together to design, create and produce work that we are proud of.
+            </p>
+            <p>
+                We are a company based in Indonesia, specialized in freelance web development, web design and logo
+                design. Customer's satisfaction and being proud of the final product are our main goals. We always make
+                sure the quality of our work to meet with customer's expectation.
+            </p>
+            <p>
+                We have a talented team that will dedicate themselves to the success of your project. Web development
+                doesn't have to be complicated. With Dilyn Tech as your partner, you can expect the process of building
+                digital products to never be a riddle.
             </p>
         </div>
     </div>
 
-    <div id="portfolio-container">
+    <div id="portfolio-container" class="component">
         PORTFOLIO
     </div>
 
-    <div id="pricing-container">
+    <div id="pricing-container" class="component">
         <span class="sub-heading-blue">PRICING</span>
         <div class="price-card-container">
             <div class="price-card">
@@ -134,7 +137,7 @@
         </div>
     </div>
 
-    <div id="customer-container">
+    <div id="customer-container" class="component">
         <img class="quotation-img"
             src="./Dilyn (Web Layout)/Main Page/jpg & png/5. Customer's Review/Quotation-Mark.png" alt="quotation img">
         <div class="sub-heading-white" style="margin-bottom: 30px;">CUSTOMER'S REVIEW</div>
@@ -195,14 +198,17 @@
         </div>
     </div>
 
-    <div id="contact-top-container">
+    <div id="contact-top-container" class="component">
         <div class="contact-left-column">
             <span class="sub-heading-blue">CONTACT US</span>
-            <form class="form-container">
-                <input type="text" placeholder="First Name*" required>
-                <input type="text" placeholder="Last Name*" required>
-                <input type="email" placeholder="Email*" required>
-                <textarea rows="4" cols="50" name="message" placeholder="Enter Message" required></textarea>
+            <form class="form-container" target="_blank" action="https://formsubmit.co/dilyn.tech.indonesia@gmail.com"
+                method="POST">
+                <input type="text" placeholder="First Name*" name="First Name" required>
+                <input type="text" placeholder="Last Name" name="Last Name">
+                <input type="text" placeholder="Company Name" name="Company">
+                <input type="email" placeholder="Email*" name="Email" required>
+                <textarea rows="4" cols="50" name="message" placeholder="Enter Message" name="Message"
+                    required></textarea>
                 <button type="submit">Submit Email</button>
             </form>
         </div>
@@ -239,7 +245,9 @@
                 Quick Links
                 <div class="footer-social-media">
                     <img src="./Dilyn (Web Layout)/Main Page/jpg & png/7. Quick Links/IG-Icon.png" alt="IG Icon">
-                    <img src="./Dilyn (Web Layout)/Main Page/jpg & png/7. Quick Links/WA-Icon.png" alt=" WA Icon">
+                    <a href="https://wa.me/628118201995?text=I'm%20interested%20in%20your%20website%20service"><img
+                            src="./Dilyn (Web Layout)/Main Page/jpg & png/7. Quick Links/WA-Icon.png"
+                            alt=" WA Icon"></a>
                     <img src="./Dilyn (Web Layout)/Main Page/jpg & png/7. Quick Links/E-mail-Icon.png" alt="Email Icon">
                 </div>
                 <div class="quick-links-inside-container">

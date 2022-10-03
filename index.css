@@ -14,17 +14,34 @@
     text-align: end;
 }
 
+.component {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.component.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 #navbar-top-container {
     position: fixed;
     width: 100%;
     z-index: 50;
 }
 
-#navigation-container {
+.navigation-container {
     display: flex;
     justify-content: space-between;
     background: none;
     padding: 10px 4%;
+}
+
+.nav-background {
+    animation: nav-back 2s;
+    background-color: rgb(3, 82, 148);
 }
 
 .navigation-words a {
@@ -304,4 +321,14 @@
         margin-top: 50px;
     }
 
+}
+
+@keyframes nav-back {
+    from {
+        background-color: rgba(3, 82, 148, 0);
+    }
+
+    to {
+        background-color: rgba(3, 82, 148, 1);
+    }
 }
