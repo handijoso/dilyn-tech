@@ -1,3 +1,13 @@
+@font-face {
+    font-family: AvenirMed;
+    src: url("./font-type/Avenir-Medium-09.ttf");
+}
+
+@font-face {
+    font-family: AvenirBlack;
+    src: url("./font-type/Avenir-Black-03.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +16,20 @@
 .sub-heading-blue {
     color: rgb(3, 82, 148);
     font-size: 22px;
+    font-family: AvenirBlack;
+    font-size: 45pt;
+    line-height: 1;
+    letter-spacing: 3px;
 }
 
 .sub-heading-white {
     color: white;
     font-size: 22px;
     text-align: end;
+    font-family: AvenirBlack;
+    font-size: 45pt;
+    line-height: 1;
+    letter-spacing: 3px;
 }
 
 .component {
@@ -47,6 +65,8 @@
 .navigation-words a {
     color: white;
     margin: auto 0;
+    font-family: AvenirMed;
+
 }
 
 #carousel-container {
@@ -54,6 +74,7 @@
 }
 
 #carousel-content {
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,12 +82,15 @@
     z-index: 11;
     color: white;
     text-align: center;
+    font-family: AvenirBlack;
+    font-size: 40pt;
+    line-height: 1.2;
+    letter-spacing: 5px;
 }
 
 #about-container {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 0 4%;
     padding-top: 100px;
@@ -74,11 +98,23 @@
 
 .about-img {
     height: 250px;
-    margin-top: 100px;
+    margin-top: 80px;
+}
+
+.about-content {
+    font-family: AvenirMed;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.about-content p:nth-child(1) {
+    font-family: AvenirBlack;
+    font-size: 16pt;
 }
 
 #portfolio-container {
     background-image: url("./Dilyn (Web Layout)/Main Page/jpg & png/3. Portfolio/Background.jpg");
+    padding: 0 4%;
     padding-top: 100px;
 }
 
@@ -87,6 +123,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
+    padding: 0 4%;
     padding-top: 100px;
     margin-bottom: 50px;
 }
@@ -130,6 +167,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
+    padding: 0 4%;
     padding-top: 100px;
 }
 
@@ -250,6 +288,10 @@
     color: white;
 }
 
+.quick-links a:hover {
+    color: black;
+}
+
 .copyright {
     color: white;
     margin-top: 100px;
@@ -257,12 +299,46 @@
 }
 
 @media (max-width:500px) {
+    .sub-heading-blue {
+        color: rgb(3, 82, 148);
+        font-family: AvenirBlack;
+        font-size: 25pt;
+        line-height: 1;
+        letter-spacing: 3px;
+    }
+
+    .sub-heading-white {
+        color: white;
+        text-align: end;
+        font-family: AvenirBlack;
+        font-size: 25pt;
+        line-height: 1;
+        letter-spacing: 3px;
+    }
+
     #navbar-top-container img {
         width: 150px;
     }
 
+    #carousel-content {
+        font-size: 16pt;
+    }
+
     #about-container {
         flex-direction: column;
+    }
+
+    .about-heading {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-img {
+        height: 200px;
+        margin-top: 40px;
+    }
+
+    .about-content {
         text-align: center;
     }
 

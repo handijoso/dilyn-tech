@@ -36,7 +36,3 @@ const navBackground = () => {
 }
 
 window.addEventListener("scroll", navBackground);
-
-const contactForm = document.querySelector(".form-container");
-contactForm.addEventListener("submit", (e) => {
-})
