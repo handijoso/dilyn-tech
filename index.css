@@ -444,8 +444,12 @@
         width: 80%;
     }
 
-    .customer-image {
-        width: 150px;
+    #customer-container {
+        height: 620px;
+    }
+
+    .card-body {
+        height: 400px;
     }
 
     .review-text p {
