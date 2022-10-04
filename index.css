@@ -50,10 +50,8 @@
 }
 
 .navigation-container {
-    display: flex;
-    justify-content: space-between;
     background: none;
-    padding: 10px 4%;
+    padding: 10px 50px !important;
 }
 
 .nav-background {
@@ -76,7 +74,7 @@
 
 .navigation-words a {
     color: white;
-    margin: auto 0;
+    margin: auto 10px;
 }
 
 #carousel-container {
@@ -92,10 +90,13 @@
     z-index: 11;
     color: white;
     text-align: center;
-    font-family: AvenirBlack;
     font-size: 40pt;
     line-height: 1.2;
     letter-spacing: 5px;
+}
+
+#carousel-content p {
+    font-family: AvenirBlack;
 }
 
 .about-top-container {
@@ -107,7 +108,6 @@
 #about-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .about-img {
@@ -118,6 +118,7 @@
 .about-content {
     letter-spacing: 2px;
     line-height: 1.5;
+    width: 70%;
 }
 
 .about-content p:nth-child(1) {
@@ -143,12 +144,15 @@
 
 #pricing-container {
     background-image: url("./gallery/Pricing Background.svg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    padding: 0 4%;
     padding-top: 100px;
     margin-bottom: 50px;
+}
+
+.pricing-title {
+    padding-left: 4%;
 }
 
 .price-card-container {
@@ -290,6 +294,10 @@
     border-radius: 3px;
 }
 
+.contact-social-media {
+    margin-bottom: 15px;
+}
+
 .contact-social-media img {
     width: 50px;
 }
@@ -314,12 +322,14 @@
 }
 
 .footer-social-media {
-    text-align: end;
+    display: flex;
+    justify-content: space-between;
 }
 
 .quick-links-container {
     width: 50%;
     color: white;
+    padding-right: 4%;
 }
 
 .quick-links-container h6 {
@@ -333,7 +343,6 @@
 }
 
 .quick-links {
-    width: 100%;
     display: flex;
     flex-direction: column;
     color: white;
@@ -377,16 +386,19 @@
         width: 150px;
     }
 
+    .navigation-container {
+        padding: 12px !important;
+    }
+
+    .navigation-words a {
+        margin: auto 0px;
+    }
+
     #carousel-content {
         font-size: 16pt;
     }
 
     #about-container {
-        flex-direction: column;
-    }
-
-    .about-heading {
-        display: flex;
         flex-direction: column;
     }
 
@@ -397,6 +409,7 @@
 
     .about-content {
         text-align: center;
+        width: 100%;
     }
 
     .price-card-container {
@@ -448,6 +461,10 @@
     .footer-logo {
         text-align: center;
         margin-bottom: 50px;
+    }
+
+    .footer-social-media {
+        flex-direction: column;
     }
 
     .footer-social-media img {
