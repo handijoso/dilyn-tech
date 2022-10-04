@@ -128,8 +128,13 @@
 
 #portfolio-container {
     background-image: url("./Dilyn (Web Layout)/Main Page/jpg & png/3. Portfolio/Background.jpg");
-    padding: 0 4%;
-    padding-top: 100px;
+    padding: 100px 4%;
+    padding-bottom: 200px;
+}
+
+.client-container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .client-img-container {
@@ -138,8 +143,7 @@
 }
 
 .client-img {
-    width: 300px;
-    height: 200px;
+    border-radius: 10px;
 }
 
 #pricing-container {
@@ -228,7 +232,7 @@
 
 .carousel-customer {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .customer-card {
@@ -299,7 +303,12 @@
 }
 
 .contact-social-media img {
-    width: 50px;
+    width: 40px;
+}
+
+.contact-social-media a:nth-child(2),
+.contact-social-media a:nth-child(3) {
+    margin-left: 10px;
 }
 
 .computer-image-container {
@@ -324,6 +333,11 @@
 .footer-social-media {
     display: flex;
     justify-content: space-between;
+}
+
+.footer-social-container a:nth-child(1),
+.footer-social-container a:nth-child(2) {
+    margin-right: 10px;
 }
 
 .quick-links-container {
@@ -412,6 +426,15 @@
         width: 100%;
     }
 
+    .client-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-img-container {
+        margin-top: 50px;
+    }
+
     .price-card-container {
         flex-direction: column;
         align-items: center;
@@ -468,7 +491,12 @@
     }
 
     .footer-social-media img {
-        width: 30%;
+        width: 25%;
+    }
+
+    .quick-links-container {
+        width: 50%;
+        padding: 0;
     }
 
     .quick-links-inside-container {
