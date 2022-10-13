@@ -5,287 +5,319 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heparen</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Dilyn Tech</title>
+    <link rel="icon" href="Dilyn Tech Logo Icon.png">
     <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="./Heparen Grey.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="whatsApp-container">
-        <a href="http://wa.me/6281333543960" target="_blank"><img title="Whatsapp Message" src="whatsapp.png"
-                alt="whatsapp logo" class="social-media-logo"></a>
-    </div>
-
-    <nav class="navbar bg-light navbar-expand-lg sticky-top">
-        <div class="container-fluid navbar-container">
-            <a href="#"><img class="logo-image" src="logo-no-back.png"></a>
+    <nav class="navbar navbar-expand-lg p-0" id="navbar-top-container">
+        <div class="navigation-container container-fluid">
             <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <a class="navbar-brand" href="#">
+                    <img src="./Dilyn (Web Layout)/Main Page/jpg & png/1. Home/Dilyn Logo (white).png" alt="Dilyn logo">
+                </a>
+            </div>
+            <div>
+                <button id="toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="./components/price-list/price-list.html"
-                            target="_blank">Daftar
-                            Harga</a>
-                        <a class="nav-link" href="./recruitment-requirement.jpeg" target="_blank">Rekrutmen</a>
+                    <div class="navbar-nav navigation-words">
+                        <a class="nav-link" href="#about-container">About Us</a>
+                        <a class="nav-link" href="#portfolio-container">Our Clients</a>
+                        <a class="nav-link" href="#pricing-container">Pricing</a>
+                        <a class="nav-link" href="#customer-container">Customer's Review</a>
+                        <a href="#contact-top-container"><img
+                                src="./Dilyn (Web Layout)/Main Page/jpg & png/1. Home/Contact-Us-Button.png"
+                                alt="contact button"></a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="hero">
-        <div class="hero__title">
-            Selamat Datang di Bimbel Kedokteran Heparen
+    <div id="carousel-container" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carousel-content">
+            <p>BUILD & DESIGN YOUR<br>WEBSITE WITH US.</p>
         </div>
-        <img class="cube" src="stethoscope.png" alt="picture">
-        <img class="cube" src="book.png" alt="picture">
-        <img class="cube" src="body-organ.png" alt="picture">
-        <img class="cube" src="thermometer.png" alt="picture">
-        <img class="cube" src="syringe.png" alt="picture">
-    </div>
-
-    <div class="about-container reveal">
-        <h1>Tentang Kami</h1>
-        <p>Bimbel kedokteran “Heparen” hadir untuk membantu kalian yang masih merasa kesulitan dalam
-            memahami materi kedokteran.
-            Saat ini terdapat lebih dari 10 pengajar yang berasal dari beberapa universitas ternama Indonesia, antara
-            lain FK Universitas
-            Tarumanagara, Universitas Trisakti, Universitas Pelita Harapan, dan Universitas Airlangga.</p>
-        <p>Murid kami berasal dari berbagai Universitas antara lain:</p>
-        <div class="student-univ-container">
-            <img class="school-img" src="./gallery/untar.png" alt="untar">
-            <img class="school-img school-size" src="./gallery/ulm.png" alt="ulm">
-            <img class="school-img" src="./gallery/umm.png" alt="umm">
-            <img class="school-img" src="./gallery/uciputra.png" alt="uciputra">
-            <img class="school-img school-size" src="./gallery/unair.png" alt="unair">
-            <img class="school-img school-size" src="./gallery/undip.png" alt="undip">
-            <img class="school-img school-size" src="./gallery/hang-tuah.png" alt="hang-tuah">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./gallery/Home - Slide 1.svg" class="d-block w-100" alt="image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./gallery/Home - Slide 2.svg" class="d-block w-100" alt="image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./gallery/Home - Slide 3.svg" class="d-block w-100" alt="image3">
+            </div>
         </div>
     </div>
 
-    <div class="subject-container reveal">
-        <h1>Materi Pembelajaran</h1>
-        <div class="row subject-component">
-            <div class="col-3 subject-words">
-                <div class=" short-div">
-                    <button class="subject-name subject-theory">Teori</button>
+    <div class="about-top-container component">
+        <div id="about-container">
+            <div>
+                <span class="sub-heading-blue">ABOUT<br>US</span><br>
+                <img class="about-img" src="./Dilyn (Web Layout)/Main Page/jpg & png/2. About Us/Boy-&-Girl-Vector.png"
+                    alt="about us img">
+            </div>
+            <div class="about-content">
+                <p>We work together to design, create and produce work that we are proud of.
+                </p>
+                <p>
+                    We are a company based in Indonesia, specialized in freelance web development, web design and logo
+                    design. Customer's satisfaction and being proud of the final product are our main goals. We always
+                    make
+                    sure the quality of our work to meet with customer's expectation.
+                </p>
+                <p>
+                    We have a talented team that will dedicate themselves to the success of your project. Web
+                    development
+                    doesn't have to be complicated. With Dilyn Tech as your partner, you can expect the process of
+                    building
+                    digital products to never be a riddle.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio-container" class="component">
+        <div class="sub-heading-white" style="margin-bottom: 30px;">OUR<br>PORTFOLIO</div>
+        <div class="client-container">
+            <div class="client-img-container">
+                <a target="_blank" href="https://heparen.netlify.app"><img class="client-img"
+                        src="./gallery/Resize Logo/Heparen (300x200px).jpg" alt="heparen logo"></a>
+            </div>
+            <div class="client-img-container">
+                <a target="_blank" href="https://www.gjtama.co.id/"><img class="client-img"
+                        src="./gallery/Resize Logo/PT Gresik Jasatama (300x200px).jpg" alt="GJT logo"></a>
+            </div>
+            <div class="client-img-container">
+                <img class="client-img" src="./gallery/Resize Logo/SKG (300x200px).jpg" alt="SKG logo">
+            </div>
+        </div>
+    </div>
+
+    <div id="pricing-container" class="component">
+        <span class="sub-heading-blue pricing-title">PRICING</span>
+        <div class="price-card-container">
+            <div class="price-card">
+                <div>
+                    <h4>BASIC</h4>
                 </div>
-                <div class="short-div">
-                    <button class="subject-name subject-prac">Skills Lab</button>
+                <div class="benefit-text">
+                    <p><span class="tick-mark">&#10003;</span>Free Domain</p>
+                    <p><span class="tick-mark">&#10003;</span>1 Page</p>
+                    <p><span class="tick-mark">&#10003;</span>Free SSL (https)</p>
+                    <p><span class="tick-mark">&#10003;</span>1 Logo Design</p>
+                    <p><span class="tick-mark">&#10003;</span>1 Web Layout Design</p>
+                    <p><span class="cross-mark">&#10060;</span>Responsive Web</p>
+                    <p><span class="cross-mark">&#10060;</span>Animation</p>
+                    <p><span class="cross-mark">&#10060;</span>Free 1 Year Maintenance</p>
                 </div>
-            </div>
-            <div class="col-9 long-div">
-                <img class="subject-img" src="./gallery/theory.jpeg" alt="picture">
-            </div>
-        </div>
-    </div>
-
-    <div class="reveal">
-        <h1>Pilihan Kelas</h1>
-        <div class="class-option">
-            <div class="class-container private-container">
-                <h4>Private<br>(1 murid)</h4>
-                <ul class="class-categories">
-                    <li class="class-category">
-                        <h6>Skills Lab / Teori</h6>
-                        3x pertemuan<br>
-                        Rp. 500.000/orang
-                    </li>
-                    <li class="class-category">
-                        <h6>Teori</h6>
-                        6x pertemuan<br>
-                        Rp. 1.000.000/orang
-                    </li>
-                    <li class="class-category">
-                        <h6>Skills Lab + Teori</h6>
-                        10x pertemuan<br>
-                        Rp. 2.000.000/orang
-                    </li>
-                </ul>
-            </div>
-            <div class="class-container semi-private-container">
-                <h4>Semi-Private<br>(2-3 murid)</h4>
-                <ul class="class-categories">
-                    <li class="class-category">
-                        <h6>Skills Lab / Teori</h6>
-                        3x pertemuan<br>
-                        Rp. 400.000/orang
-                    </li>
-                    <li class="class-category">
-                        <h6>Teori</h6>
-                        6x pertemuan<br>
-                        Rp. 800.000/orang
-                    </li>
-                    <li class="class-category">
-                        <h6>Skills Lab + Teori</h6>
-                        10x pertemuan<br>
-                        Rp. 1.600.000/orang
-                    </li>
-                </ul>
-            </div>
-            <div class="class-container group-container">
-                <h4>Group<br>(4-10 murid)</h4>
-                <ul class="class-categories">
-                    <li class="class-category">
-                        <h6>Skills Lab / Teori</h6>
-                        3x pertemuan<br>
-                        Rp. 300.000/orang
-                    </li>
-                    <li class="class-category">
-                        <h6>Teori</h6>
-                        6x pertemuan<br>
-                        Rp. 650.000/orang
-                    </li>
-                    <li class="class-category">
-                        <h6>Skills Lab + Teori</h6>
-                        10x pertemuan<br>
-                        Rp. 1.200.000/orang
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="system-container reveal">
-        <h1>Alur Bimbel</h1>
-        <div class="timeline">
-            <ul>
-                <li class="tahap">
-                    <div>
-                        <h5>TAHAP 1</h5>
-                        <p>Melakukan pendaftaran bimbel sesuai kelas yang diinginkan</p>
-                        <button class="register-btn"><a class="register-txt" href="http://wa.me/6281333543960"
-                                target="_blank">Daftar
-                                Sekarang</a></button>
+                <div>
+                    <span>IDR 8.000.000</span>
+                    <div class="price-amount">
+                        IDR 4.000.000
                     </div>
-                </li>
-                <li class="tahap">
-                    <div>
-                        <h5>TAHAP 2</h5>
-                        <p>Jadwal les disesuaikan dengan kesepakatan antara murid dan pengajar, murid boleh mengubah
-                            jadwal maksimal H-1 pertemuan</p>
+                </div>
+            </div>
+            <div class="price-card">
+                <div>
+                    <h4>STANDARD</h4>
+                </div>
+                <div class="benefit-text">
+                    <p><span class="tick-mark">&#10003;</span>Free Domain</p>
+                    <p><span class="tick-mark">&#10003;</span>Up To 5 Pages</p>
+                    <p><span class="tick-mark">&#10003;</span>Free SSL (https)</p>
+                    <p><span class="tick-mark">&#10003;</span>3 Logo Design Choices</p>
+                    <p><span class="tick-mark">&#10003;</span>3 Web Layout Design Choices</p>
+                    <p><span class="tick-mark">&#10003;</span>Responsive Web</p>
+                    <p><span class="tick-mark">&#10003;</span>Animation</p>
+                    <p><span class="tick-mark">&#10003;</span>Free 1 Year Maintenance</p>
+                </div>
+                <div>
+                    <span>IDR 10.000.000</span>
+                    <div class="price-amount">
+                        IDR 5.000.000
                     </div>
-                </li>
-                <li class="tahap">
-                    <div>
-                        <h5>TAHAP 3</h5>
-                        <p>Ruangan kelas virtual akan disediakan oleh pengajar (Zoom / Google Meet)</p>
+                </div>
+            </div>
+            <div class="price-card">
+                <div>
+                    <h4>E-COMMERCE</h4>
+                </div>
+                <div class="benefit-text">
+                    <p><span class="tick-mark">&#10003;</span>Free Domain</p>
+                    <p><span class="tick-mark">&#10003;</span>Up To 10 Pages</p>
+                    <p><span class="tick-mark">&#10003;</span>Free SSL (https)</p>
+                    <p><span class="tick-mark">&#10003;</span>3 Logo Design Choices</p>
+                    <p><span class="tick-mark">&#10003;</span>3 Web Layout Design Choices</p>
+                    <p><span class="tick-mark">&#10003;</span>Responsive Web</p>
+                    <p><span class="tick-mark">&#10003;</span>Animation</p>
+                    <p><span class="tick-mark">&#10003;</span>Free 1 Year Maintenance</p>
+                </div>
+                <div>
+                    <span>IDR 20.000.000</span>
+                    <div class="price-amount">
+                        IDR 15.000.000
                     </div>
-                </li>
-                <li class="tahap">
-                    <div>
-                        <h5>TAHAP 4</h5>
-                        <p>Bahan materi akan disediakan dari Heparen, namun murid juga boleh memberikan bahan atau
-                            materi
-                            dari kampusnya, yang ingin dijelaskan oleh pengajar. Murid juga boleh meminta pembahasan
-                            soal-soal tahun sebelumnya.
-                            Paling lambat untuk mengirimkan bahan kepada pengajar adalah H-2 sebelum pertemuan.</p>
-                    </div>
-                </li>
-                <li class="tahap">
-                    <div>
-                        <h5>TAHAP 5</h5>
-                        <p>Setelah paket bimbel selesai, murid dapat memberikan review/pendapat kepada pihak Heparen,
-                            agar kami bisa menjadi lebih baik kedepannya</p>
-                    </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="reveal team-container">
-        <h1>Tim Kami</h1>
-        <h3>Pendiri</h3>
-        <div class="card tutor-card">
-            <img src="./gallery/pengajar/irenesetiawan.jpg" class="card-img-top" alt="tutor image">
-            <div class="card-body">
-                <span class="tutor-text">
-                    <p>dr.Irene Setiawan</p>
-                    Alumni FK 2016
-                </span>
+    <div id="customer-container" class="component">
+        <img class="quotation-img"
+            src="./Dilyn (Web Layout)/Main Page/jpg & png/5. Customer's Review/Quotation-Mark.png" alt="quotation img">
+        <div class="sub-heading-white" style="margin-bottom: 30px;">CUSTOMER'S<br>REVIEW</div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item  carousel-customer active">
+                    <div class="card bg-transparent customer-card border-0">
+                        <div class="card-body review-text">
+                            <h3 class="card-title">dr.Irene Setiawan</h3>
+                            <p>Founder of Heparen</p>
+                            <p class="card-text">"Good web design, even when I don't have any idea about the design,
+                                Dilyn Tech provided me with some examples to choose from. The website can be revised
+                                until it meets with my expectations. Thank you Dilyn Tech! I will surely use their
+                                service again"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item  carousel-customer">
+                    <div class="card bg-transparent customer-card border-0">
+                        <div class="card-body review-text">
+                            <h3 class="card-title">Daniel Adryanto</h3>
+                            <p>Manager of PT Gresik Jasatama</p>
+                            <p class="card-text">"With the growing of technology everyday, we realized that even our
+                                business sector as port operation also need a company website. Dilyn Tech really went
+                                beyond to make sure that we are satisfied with the result. Their team is open during
+                                discussion and very initiative"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item  carousel-customer">
+                    <div class="card bg-transparent customer-card border-0">
+                        <div class="card-body review-text">
+                            <h3 class="card-title">Gerry Gunawan</h3>
+                            <p>Director of CV Sinawa Karya Global</p>
+                            <p class="card-text">"It was fun working together with Dilyn Tech. It was really helpful by
+                                providing the sample of logo design and web layout design before start building the real
+                                products. We can change things around during the draftstep, before starting the website
+                                built-up. I wish good luck to Dilyn Tech"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <h3>Pengajar</h3>
-        <div class="tutor-container">
-            <div class="card tutor-card">
-                <img src="./gallery/pengajar/dr. Devin Alexander - UNTAR.jpg" class="card-img-top tutor-image"
-                    alt="tutor image">
-                <div class="card-body">
-                    <span class="tutor-text">
-                        <p>dr.Devin Alexander</p>
-                        Alumni FK 2016
-                    </span>
-                </div>
-            </div>
-            <div class="card tutor-card">
-                <img src="./gallery/pengajar/dr Carmelita-UNTAR.jpeg" class="card-img-top tutor-image"
-                    alt="tutor image">
-                <div class="card-body">
-                    <span class="tutor-text">
-                        <p>dr.Carmelita</p>
-                        Alumni FK 2016
-                    </span>
-                </div>
-            </div>
-            <div class="card tutor-card">
-                <img src="./gallery/pengajar/dr. Anisa Rizmi - UNTAR.JPG" class="card-img-top tutor-image"
-                    alt="tutor image">
-                <div class="card-body">
-                    <span class="tutor-text">
-                        <p>dr.Anisa Rizmi</p>
-                        Alumni FK 2016
-                    </span>
-                </div>
-            </div>
-            <div class="card tutor-card">
-                <img src="./gallery/pengajar/dr. Nikodemus Dio Kristanto - Untar.jpg" class="card-img-top tutor-image"
-                    alt="tutor image">
-                <div class="card-body">
-                    <span class="tutor-text">
-                        <p>dr.Nikodemus Kristanto</p>
-                        Alumni FK 2016
-                    </span>
-                </div>
-            </div>
-        </div>
-        <h3 style="text-align: center;">Dan Lainnya...</h3>
     </div>
 
-    <footer>
-        <div class="social-media">
-            <p>Info lebih lanjut:</p>
-            <a href="https://instagram.com/hepa.med/" target="_blank"><img class="social-media-logo"
-                    src="instagram.jpeg" alt="Insta logo"></a>
-            <a href="http://wa.me/6281333543960" target="_blank"><img title="Whatsapp Message" src="whatsapp.png"
-                    alt="whatsapp logo" class="social-media-logo"></a>
-            <a href="https://line.me/ti/p/Fvg0ePN_Vn" target="_blank"><img title="Line Message" src="line.jpeg"
-                    alt="line logo" class="social-media-logo line-logo"></a>
+    <div id="contact-top-container" class="component">
+        <div class="contact-left-column">
+            <span class="sub-heading-blue">CONTACT<br>US</span>
+            <form class="form-container" action="https://formsubmit.co/855a1b76c9022acd6de8b29848ed1916" method="POST">
+                <input type="text" placeholder="First Name*" name="First Name" required>
+                <input type="text" placeholder="Last Name" name="Last Name">
+                <input type="text" placeholder="Company Name" name="Company">
+                <input type="email" placeholder="Email*" name="Email" required>
+                <textarea rows="4" cols="50" name="message" placeholder="Enter Message" name="Message"
+                    required></textarea>
+                <button type="submit" class="contact-submit">Submit Email</button>
+            </form>
         </div>
-        <div class="information">
-            <a href="#">Home</a>
-            <a href="./components/price-list/price-list.html" target="_blank">Daftar Harga</a></li>
-            <a href="./recruitment-requirement.jpeg" target="_blank">Rekrutmen</a>
+        <div class="contact-right-column">
+            <div class="contact-social-media">
+                <a target="_blank" href="https://www.instagram.com/dilyn_tech/"><img
+                        src="./gallery/Crop PNG/Contact Us/IG-Icon.png" alt="instagram logo"></a>
+                <a target="_blank"
+                    href="https://wa.me/628118201995?text=I'm%20interested%20in%20your%20website%20service"><img
+                        src="./gallery/Crop PNG/Contact Us/WA-Icon.png" alt="WA Logo"></a>
+                <a href="mailto: dilyn.tech.indonesia@gmail.com"><img src="./gallery/Crop PNG/Contact Us/Email-Icon.png"
+                        alt="email logo"></a>
+            </div>
+            <div class="contact-info">
+                <h5>INSTAGRAM</h5>
+                <h6>@dilyn_tech</h6>
+                <h5>WHATSAPP</h5>
+                <h6>+628118201995</h6>
+                <h5>EMAIL</h5>
+                <h6>dilyn.tech.indonesia@gmail.com</h6>
+            </div>
+            <div class="computer-image-container">
+                <img src="./gallery/Crop PNG/Contact Us/Computer-Icon.png" alt="computer logo">
+            </div>
         </div>
-        <div class="footer-contact">
-            heparen@gmail.com <br>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-inside-container">
+            <div class="footer-logo">
+                <img src="./Dilyn (Web Layout)/Main Page/jpg & png/7. Quick Links/Dilyn Logo (White).png"
+                    alt="Dilyn logo">
+            </div>
+            <div class="quick-links-container">
+                <div class="footer-social-media">
+                    <h6>Quick Links</h6>
+                    <div class="footer-social-container">
+                        <a target="_blank" href="https://www.instagram.com/dilyn_tech/"><img
+                                src="./gallery/Crop PNG/Quick Links/Instagram-Icon.png" alt="IG Icon"></a>
+                        <a href="https://wa.me/628118201995?text=I'm%20interested%20in%20your%20website%20service"><img
+                                src="./gallery/Crop PNG/Quick Links/WhatsApp-Icon.png" alt=" WA Icon"></a>
+                        <a href="mailto: dilyn.tech.indonesia@gmail.com"><img
+                                src="./gallery/Crop PNG/Quick Links/E-mail-Icon.png" alt="Email Icon"></a>
+                    </div>
+                </div>
+                <div class="quick-links-inside-container">
+                    <div class="quick-links">
+                        <a href="#">Home</a>
+                        <a href="#pricing-container">Pricing</a>
+                    </div>
+                    <div class="quick-links">
+                        <a href="#about-container">About Us</a>
+                        <a href="#customer-container">Customer's Review</a>
+                    </div>
+                    <div class="quick-links">
+                        <a href="#portfolio-container">Our Clients</a>
+                        <a href="#contact-top-container">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2022 Dilyn Tech. All rights reserved
         </div>
     </footer>
-    <p class="copyright">Copyright &copy; 2022 Heparen. All rights reserved.</p>
 
-    <script src="index.js"></script>
-    <script src="tutor.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
 </body>
 
